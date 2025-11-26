@@ -1,6 +1,7 @@
 # Netlify Configuration for Imperial Restitution Press
 
 [build]
+  # Static HTML site - no build step required
   publish = "."
 
 # Redirect www to non-www
