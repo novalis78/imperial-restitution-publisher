@@ -4,7 +4,7 @@
   "description": "Imperial Restitution Press - Where Empires of Thought Endure",
   "scripts": {
     "dev": "npx live-server --port=3000 --open=/",
-    "build": "mkdir -p dist && cp -r *.html css js assets dist/"
+    "build": "mkdir -p dist && cp -r *.html *.xml *.txt css js assets dist/"
   },
   "keywords": ["publishing", "books", "classical", "literature"],
   "author": "Lennart Lopin",
