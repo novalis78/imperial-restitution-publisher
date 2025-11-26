@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Complete | Imperial Restitution Press</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .success-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--space-2xl);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-2xl);
+            animation: scaleIn 0.5s var(--ease-out);
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            color: var(--gold);
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-title {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: var(--ivory);
+            margin-bottom: var(--space-md);
+        }
+
+        .success-subtitle {
+            font-family: var(--font-heading);
+            font-size: var(--text-xl);
+            font-style: italic;
+            color: var(--parchment);
+            margin-bottom: var(--space-xl);
+        }
+
+        .success-message {
+            max-width: 500px;
+            color: var(--sand);
+            margin-bottom: var(--space-3xl);
+            line-height: 1.8;
+        }
+
+        .success-actions {
+            display: flex;
+            gap: var(--space-lg);
+        }
+
+        .success-btn {
+            font-family: var(--font-display);
+            font-size: var(--text-sm);
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: var(--space-md) var(--space-xl);
+            transition: all var(--duration-fast) var(--ease-out);
+        }
+
+        .success-btn-primary {
+            color: var(--obsidian);
+            background: var(--gold);
+        }
+
+        .success-btn-primary:hover {
+            background: var(--gold-light);
+        }
+
+        .success-btn-secondary {
+            color: var(--gold);
+            border: 1px solid var(--gold);
+        }
+
+        .success-btn-secondary:hover {
+            background: var(--gold);
+            color: var(--obsidian);
+        }
+
+        .success-footer {
+            position: absolute;
+            bottom: var(--space-2xl);
+            font-size: var(--text-sm);
+            color: var(--pewter);
+        }
+
+        .success-footer a {
+            color: var(--sand);
+            border-bottom: 1px solid transparent;
+            transition: all var(--duration-fast);
+        }
+
+        .success-footer a:hover {
+            color: var(--ivory);
+            border-bottom-color: var(--gold-muted);
+        }
+    </style>
+</head>
+<body>
+    <main class="success-page">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"/>
+            </svg>
+        </div>
+
+        <h1 class="success-title">Purchase Complete</h1>
+        <p class="success-subtitle">Gratias tibi ago — Thank you</p>
+
+        <p class="success-message">
+            Your order has been confirmed. A confirmation email with download links and order details has been sent to your email address. Welcome to the community of scholars and thinkers who seek wisdom that endures.
+        </p>
+
+        <div class="success-actions">
+            <a href="/" class="success-btn success-btn-primary">Return to Catalog</a>
+            <a href="/#about" class="success-btn success-btn-secondary">Learn More</a>
+        </div>
+
+        <p class="success-footer">
+            Questions? <a href="mailto:support@imperialrestitution.com">Contact Support</a>
+        </p>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

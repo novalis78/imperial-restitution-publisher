@@ -1,0 +1,12 @@
+{
+  "name": "imperial-restitution-publisher",
+  "version": "1.0.0",
+  "description": "Imperial Restitution Press - Where Empires of Thought Endure",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=/",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": ["publishing", "books", "classical", "literature"],
+  "author": "Lennart Lopin",
+  "license": "MIT"
+}
