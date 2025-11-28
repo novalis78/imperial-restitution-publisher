@@ -120,6 +120,37 @@ body {
     color: var(--obsidian);
 }
 
+/* Custom Scrollbar - Imperial Theme */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--obsidian);
+    border-left: 1px solid var(--charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--charcoal) 0%, var(--slate) 50%, var(--charcoal) 100%);
+    border: 2px solid var(--obsidian);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--gold-muted) 0%, var(--gold) 50%, var(--gold-muted) 100%);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--obsidian);
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--slate) var(--obsidian);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -592,8 +623,12 @@ button {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--space-2xl);
+}
+
+.books-grid .book-card {
+    max-width: 450px;
 }
 
 /* ═══════════════════════════════════════════════════════════════
